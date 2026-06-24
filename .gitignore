@@ -1,0 +1,32 @@
+# Віртуальне оточення
+venv/
+env/
+.venv/
+ 
+# Python-кеш
+__pycache__/
+*.py[cod]
+*$py.class
+ 
+# База даних SQLite
+*.sqlite3
+db.sqlite3
+ 
+# Файли середовища / секрети
+.env
+*.env
+ 
+# Django
+*.log
+local_settings.py
+media/
+staticfiles/
+ 
+# IDE та редактори
+.vscode/
+.idea/
+*.swp
+ 
+# Операційна система
+.DS_Store
+Thumbs.db
