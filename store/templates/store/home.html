@@ -1,0 +1,29 @@
+{% extends "store/base.html" %}
+{% load static %}
+
+{% block title %} Інтернет-магазин | {{ block.super }}{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'store/css/home.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<h1 class="page-title">{{ heading }}</h1>
+
+<div class="stats-container">
+    <div class="stat-card">
+        <div class="stat-number num-catalog">{{ totalProducts }}</div>
+        <div class="stat-label">Товарів у каталозі</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number num-stock">6</div>
+        <div class="stat-label">В наявності</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number num-orders">0</div>
+        <div class="stat-label">Замовлень</div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,47 @@
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    color: #1e1e2f;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eaeaea;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.num-catalog {
+    color: #ff3366;
+}
+
+.num-stock {
+    color: #2ecc71;
+}
+
+.num-orders {
+    color: #00bcd4;
+}
+
+.stat-label {
+    color: #888;
+    font-size: 14px;
+}

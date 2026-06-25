@@ -38,14 +38,13 @@ def apply_filters(products_dict, sort=None, in_stock=False):
 def home(request):
     """ Завдання 2 — Головна сторінка """
     totalProducts = len(PRODUCTS)
+    context= {
+        'totalProducts': totalProducts,
+        'heading': 'Ласкаво просимо до My Store'
+    }
 
-    return HttpResponse(f"""
-                        <h1>My Store</h1>
-                        <p>Товарів: {totalProducts}</p>
-                        <a href="/store/">Каталог</a>
-                        <a href="/store/search">Пошук</a>
-                        <a href="/store/orders">Замовлення</a>
-                        """)
+    return render(request, "store/home.html", context)
+
 
 def product_list(request):
     """ Завдання 3 — Каталог товарів з фільтрацією """
